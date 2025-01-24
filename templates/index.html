@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 
-{% block title %}Sprunki Retake Sprunkr Oc Mod Play On Sprunkr.Online{% endblock %}
+{% block title %}Sprunki Phase 1 New Incredibox Oc Mod{% endblock %}
 
 {% block meta_description %}
-<meta name="description" content="Sprunkr, A New Sprunki Horror Mod Online, Create unique horror compositions, experience spine-chilling sound effects, and immerse yourself on sprunkr online">
+<meta name="description" content="Sprunki Phase 1 is a must - try! It's an innovative music - creation game where you can make unique beats with fun characters and sounds. Plus, it combines adventure and puzzle - solving. ">
 {% endblock %}
 
-{% block og_title %}Sprunki Retake Sprunkr Oc Mod Play On Sprunkr.Online{% endblock %}
-{% block og_description %}Sprunkr, A New Sprunki Horror Mod Online, Create unique horror compositions, experience spine-chilling sound effects, and immerse yourself on sprunkr online{% endblock %}
+{% block og_title %}Sprunki Phase 1 New Incredibox Oc Mod{% endblock %}
+{% block og_description %}Sprunki Phase 1 is a must - try! It's an innovative music - creation game where you can make unique beats with fun characters and sounds. Plus, it combines adventure and puzzle - solving. {% endblock %}
 
 {% block content %}
 <div class="relative overflow-hidden">
@@ -29,7 +29,7 @@
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-700">
                             <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
                                 <iframe 
-                                    src="https://wowtbc.net/sprunkin/sprunkr-retake/index.html"
+                                    src="https://wowtbc.net/sprunkin/sprunki-original/index.html"
                                     class="w-full border-0 aspect-[4/3] md:aspect-[16/10] lg:aspect-[16/9]"
                                     style="min-height: 300px; max-height: 635px; height: calc(100vw * 0.5625);"
                                     scrolling="no"
@@ -44,10 +44,10 @@
                     <div class="pr-12">
                         <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
                             <span class="bg-gradient-to-r from-red-600 via-red-500 to-black bg-clip-text text-transparent">
-                                {{ translations.get('game', {}).get('title', 'Sprunkr') }}
+                                {{ translations.get('game', {}).get('title', 'Sprunki') }}
                             </span>
                             <br>
-                            <span class="text-gray-800 dark:text-white">{{ translations.get('game', {}).get('subtitle', 'Sprunki New Horror Music Mod Game') }}</span>
+                            <span class="text-gray-800 dark:text-white">{{ translations.get('game', {}).get('subtitle', 'Sprunki Phase 1 New Incredibox Oc Mod') }}</span>
                         </h1>
                         <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
                             {{ translations.get('game', {}).get('description', 'Unleash haunting melodies with our special glitch music system. Stack sounds, witness their digital distortion transformation. Embrace Horror Aesthetics.') }}
@@ -68,7 +68,7 @@
     -->
 
     <!-- Trending Games Section -->
-    {% with current_page='sprunkr' %}
+    {% with current_page='sprunki phase 1' %}
     {% include 'components/trending_games.html' %}
     {% endwith %}
 

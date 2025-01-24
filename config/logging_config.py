@@ -38,7 +38,7 @@ def setup_logging(app):
         if not os.path.exists(log_dir):
             os.makedirs(log_dir)
 
-        file_handler = logging.FileHandler(os.path.join(log_dir, 'sprunkr.log'))
+        file_handler = logging.FileHandler(os.path.join(log_dir, 'sprunki-phase-1.log'))
         file_handler.setLevel(logging.DEBUG)
         file_handler.setFormatter(formatter)
         

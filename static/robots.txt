@@ -27,4 +27,4 @@ Disallow: /_next/static/
 Crawl-delay: 1
 
 # 站点地图
-Sitemap: https://sprunkr.online/sitemap.xml
+Sitemap: https://sprunki-phase-1.come/sitemap.xml
