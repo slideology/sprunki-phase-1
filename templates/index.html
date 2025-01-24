@@ -44,13 +44,13 @@
                     <div class="pr-12">
                         <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
                             <span class="bg-gradient-to-r from-red-600 via-red-500 to-black bg-clip-text text-transparent">
-                                {{ translations.get('game', {}).get('title', 'Sprunki') }}
+                               Sprunki Phase 1
                             </span>
                             <br>
-                            <span class="text-gray-800 dark:text-white">{{ translations.get('game', {}).get('subtitle', 'Sprunki Phase 1 New Incredibox Oc Mod') }}</span>
+                            <span class="text-gray-800 dark:text-white">New Incredibox Oc Mod</span>
                         </h1>
                         <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
-                            {{ translations.get('game', {}).get('description', 'Unleash haunting melodies with our special glitch music system. Stack sounds, witness their digital distortion transformation. Embrace Horror Aesthetics.') }}
+                            Unleash haunting melodies with our special glitch music system. Stack sounds, witness their digital distortion transformation. Embrace Horror Aesthetics.
                         </p>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
     -->
 
     <!-- Trending Games Section -->
-    {% with current_page='sprunki phase 1' %}
+    {% with current_page='index' %}
     {% include 'components/trending_games.html' %}
     {% endwith %}
 
