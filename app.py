@@ -395,6 +395,31 @@ def get_faqs_for_page(page_name):
             ],
             'conclusion': 'Sprunki Sprunksters captivates players with its blend of innovation and accessibility. It has an enthusiastic community and welcomes all forms of musical creativity from beginners to experts.'
         },
+        '1996': {
+            'faqs': [
+                {
+    "question": "What is Sprunki 1996 But Better?",
+    "answer": "Sprunki 1996 But Better is an enhanced retro mod that recaptures the nostalgic essence of 90s music, integrating it with modern refinements and features."
+},
+{
+    "question": "What are the features of Sprunki 1996 But Better?",
+    "answer": " - It offers classic 90s beats with crystal - clear audio quality. \n - Has retro - style characters accompanied by smooth modern animations. \n - Presents vintage sound effects processed with contemporary techniques. \n - Provides old - school vocals with enhanced clarity. \n - Features traditional rhythms with added depth. Also, it comes with improved graphics, enhanced sound quality, and modern gameplay features."
+},
+{
+    "question": "Who is Sprunki 1996 But Better suitable for?",
+    "answer": "It is suitable for both 90s music enthusiasts longing to relive the era's charm and new players interested in experiencing 90s - inspired music with modern conveniences."
+},
+{
+    "question": "What can players do with Sprunki 1996 But Better?",
+    "answer": "Players can create their own nostalgic masterpieces, taking advantage of the improved graphics, enhanced sound quality, and modern gameplay features to blend and remix elements of 90s music in novel ways."
+},
+{
+    "question": "Why should players try Sprunki 1996 But Better?",
+    "answer": "Players should try it to re - experience and remix the 90s in a new, improved way. It offers a unique combination of nostalgia and modern enhancements, allowing them to explore the evolution of 90s - style music and enjoy an enhanced musical creation experience."
+}
+            ],
+            'conclusion': 'Sprunki 1996: Relive 90s street racing with a thrilling, nostalgic arcade - style game!'
+        },
         'agents': {
             'faqs': [
                 {
@@ -716,7 +741,14 @@ def sprunki_agents():
                          dynamic_faqs=faq_data['faqs'],
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
-
+@app.route('/sprunki-1996')
+def sprunki_1996():
+    faq_data = get_faqs_for_page('1996')
+    return render_template('sprunki-1996.html',
+                         page_title='Sprunki 1996',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
 @app.route('/sprunki-retake-but-human')
 def sprunki_retake_but_human():
     faq_data = get_faqs_for_page('retake-but-human')
@@ -725,6 +757,7 @@ def sprunki_retake_but_human():
                          dynamic_faqs=faq_data['faqs'],
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
+
 
 @app.route('/sprunki-parodybox')
 def sprunki_parodybox():
