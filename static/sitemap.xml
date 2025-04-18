@@ -102,4 +102,10 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+    <url>
+        <loc>https://sprunki-phase-1.com/sprunki-1996</loc>
+        <lastmod>2025-02-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
 </urlset>
