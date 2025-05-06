@@ -7,7 +7,12 @@ from dotenv import load_dotenv
 import json
 import logging
 
+# 导入工具函数
+from utils.faq_utils import get_faqs_for_page
+from utils.translation_utils import get_translations
+
 load_dotenv()
+
 
 app = Flask(__name__)
 app.secret_key = os.getenv('SECRET_KEY', 'sprunki-secret-key-2023')
@@ -758,6 +763,14 @@ def sprunki_retake_but_human():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/yet-another-boring-old-sprunki-mod')
+def yet_another_boring_old_sprunki_mod():
+    faq_data = get_faqs_for_page('yet-another-boring-old-sprunki-mod')
+    return render_template('yet-another-boring-old-sprunki-mod.html',
+                         page_title='Yet Another Boring Old Sprunki Mod',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
 
 @app.route('/sprunki-parodybox')
 def sprunki_parodybox():
