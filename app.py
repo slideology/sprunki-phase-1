@@ -763,6 +763,22 @@ def sprunki_retake_but_human():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/wacky-flip')
+def wacky_flip():
+    faq_data = get_faqs_for_page('wacky-flip')
+    return render_template('wacky-flip.html',
+                         page_title='Wacky Flip',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+@app.route('/merge-fellas')
+def merge_fellas():
+    faq_data = get_faqs_for_page('merge-fellas')
+    return render_template('merge-fellas.html',
+                         page_title='Merge Fellas',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
 @app.route('/yet-another-boring-old-sprunki-mod')
 def yet_another_boring_old_sprunki_mod():
     faq_data = get_faqs_for_page('yet-another-boring-old-sprunki-mod')

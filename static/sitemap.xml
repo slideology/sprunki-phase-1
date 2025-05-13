@@ -126,4 +126,16 @@
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
+    <url>
+        <loc>https://sprunki-phase-1.com/merge-fellas</loc>
+        <lastmod>2025-05-13</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://sprunki-phase-1.com/wacky-flip</loc>
+        <lastmod>2025-05-13</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
 </urlset>
