@@ -779,6 +779,14 @@ def italian_brainrot_2048():
                          dynamic_faqs=faq_data['faqs'],
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
+@app.route('/red-rush')
+def red_rush():
+    faq_data = get_faqs_for_page('red-rush')
+    return render_template('red-rush.html',
+                         page_title='Red Rush',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
 @app.route('/merge-fellas')
 def merge_fellas():
     faq_data = get_faqs_for_page('merge-fellas')
